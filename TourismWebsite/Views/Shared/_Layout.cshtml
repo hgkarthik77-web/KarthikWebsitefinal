@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IMPORTANT: Only ONE viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>@ViewData["Title"] - POORNASATHYA TRAVELS</title>
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
+    <!-- Font Awesome (Only once) -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 
 <body>
 
@@ -349,7 +352,11 @@
     <!-- ===== PAGE CONTENT ===== -->
     <main>
         @RenderBody()
-        @await Html.PartialAsync("_WhyChooseUsAndReviews")
+        @if (ViewData["Title"]?.ToString() != "Contact")
+        {
+            @await Html.PartialAsync("_WhyChooseUsAndReviews")
+        }
+
     </main>
 
     <!-- ===================== FOOTER ===================== -->
@@ -365,14 +372,17 @@
 
                 <div class="col-md-6 text-md-end mt-3 mt-md-0">
                     <input type="text"
-                           id="phoneInput"
+                           id="footerPhone"
                            placeholder="Enter Phone Number"
                            maxlength="10"
                            class="footer-input" />
 
-                    <button onclick="validatePhone()" class="footer-btn">
+                    <small id="footerPhoneError" class="text-danger"></small>
+
+                    <button onclick="validateFooterPhone()" class="footer-btn">
                         Submit Now
                     </button>
+
                 </div>
 
             </div>
@@ -553,6 +563,29 @@
             });
 
         });
+    </script>
+    <script>
+        function validateFooterPhone() {
+
+            let phone = document.getElementById("footerPhone").value.trim();
+            let error = document.getElementById("footerPhoneError");
+
+            error.innerText = "";
+
+            if(phone === "") {
+                error.innerText = "Phone number is required";
+                return;
+            }
+
+            if(!/^[0-9]{10}$/.test(phone)) {
+                error.innerText = "Enter valid 10 digit number";
+                return;
+            }
+
+            alert("Thank you! We will contact you soon.");
+
+            document.getElementById("footerPhone").value = "";
+        }
     </script>
 
 </body>

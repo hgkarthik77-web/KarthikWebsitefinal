@@ -1,4 +1,24 @@
 ﻿/* ================================
+/* ================================
+   GLOBAL FIX (ADD THIS AT VERY TOP)
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =================================
    BASE
 ================================ */
 html {
@@ -8,7 +28,9 @@ html {
 }
 
 @media (min-width: 768px) {
-    html { font-size: 16px; }
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
@@ -3792,4 +3814,308 @@ body {
     .top-line {
         width: 150px;
     }
+}
+/* HERO */
+.cultural-hero {
+    position: relative;
+    background: url('https://wallpapercave.com/wp/wp10918600.jpg') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+    .cultural-hero .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* CARDS */
+.cultural-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 300px;
+    transition: transform 0.4s ease;
+}
+
+    .cultural-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .cultural-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .cultural-card .card-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        color: white;
+    }
+/* VISA HERO */
+.visa-hero {
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1488646953014-85cb44e25828') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+    .visa-hero .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .visa-hero .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+/* VISA CARDS */
+.visa-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 300px;
+    transition: transform 0.4s ease;
+}
+
+    .visa-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .visa-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .visa-card .card-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        color: white;
+    }
+/* HERO */
+.international-hero {
+    position: relative;
+    background: url('https://th.bing.com/th/id/R.e2c7eace6840a32c2ce01e4d3540ef88?rik=QmOfg1PuKZ%2fvlw&riu=http%3a%2f%2fheettoursandtravels.in%2fimages%2finternational.jpg&ehk=F%2bcYHEGsvXKc7E8%2bOSgfIrHZqsdVbdkVP9750GXZrZQ%3d&risl=&pid=ImgRaw&r=0') center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+    .international-hero .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .international-hero .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+/* CARDS */
+.intl-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 300px;
+    transition: transform 0.4s ease;
+}
+
+    .intl-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .intl-card:hover img {
+        transform: scale(1.1);
+    }
+
+    .intl-card .card-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        background: linear-gradient(transparent, rgba(0,0,0,0.8));
+        color: white;
+    }
+/* POPULAR TOURS */
+.popular-tours {
+    background: #f9f9f9;
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.section-subtitle {
+    color: #666;
+    font-size: 15px;
+}
+
+.tour-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 280px;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+    .tour-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+
+    .tour-card:hover img {
+        transform: scale(1.1);
+    }
+
+.tour-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: #fff;
+}
+
+    .tour-content h5 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .tour-content span {
+        font-size: 14px;
+    }
+.tour-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+    .tour-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+.tour-content {
+    padding: 15px;
+}
+
+    .tour-content h5 {
+        font-weight: 600;
+    }
+
+    .tour-content span {
+        font-size: 14px;
+        color: #666;
+    }
+
+.tour-buttons {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+}
+
+.call-btn {
+    border: 2px solid #ff6600;
+    color: #ff6600;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+    .call-btn:hover {
+        background: #ff6600;
+        color: #fff;
+    }
+
+.view-btn {
+    background: #ff6600;
+    color: #fff;
+    padding: 6px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+    .view-btn:hover {
+        background: #e65c00;
+    }
+@media (hover: none) {
+    .tour-card:hover {
+        transform: none !important;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08) !important;
+    }
+
+    .call-btn:hover,
+    .view-btn:hover {
+        background: #ff6600 !important;
+        color: #fff !important;
+    }
+}
+.navbar {
+    width: 100%;
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+
+    p {
+        font-size: 14px !important;
+    }
+
+    .tour-card img {
+        height: 180px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
 }

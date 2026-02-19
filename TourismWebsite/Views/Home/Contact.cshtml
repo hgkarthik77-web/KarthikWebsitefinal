@@ -16,7 +16,6 @@
         <div class="top-line"></div>
         <h1>CONTACT US</h1>
     </div>
-    
 
 </section>
 
@@ -26,14 +25,21 @@
 
             <!-- LEFT FORM -->
             <div class="col-lg-6">
-                <form class="custom-contact-form">
+                <form class="custom-contact-form" id="contactForm">
 
-                    <input type="text" placeholder="Enter Name" class="form-control mb-3">
-                    <input type="email" placeholder="Enter Email ID" class="form-control mb-3">
-                    <input type="text" placeholder="Enter Phone No" class="form-control mb-3">
-                    <input type="text" placeholder="Enter Destination" class="form-control mb-3">
+                    <input type="text" id="name" placeholder="Enter Name" class="form-control mb-1">
+                    <small id="nameError" class="text-danger"></small>
 
-                    <button type="submit" class="submit-btn">
+                    <input type="email" id="email" placeholder="Enter Email ID" class="form-control mb-1 mt-3">
+                    <small id="emailError" class="text-danger"></small>
+
+                    <input type="text" id="phone" placeholder="Enter Phone No" class="form-control mb-1 mt-3">
+                    <small id="phoneError" class="text-danger"></small>
+
+                    <input type="text" id="destination" placeholder="Enter Destination" class="form-control mb-1 mt-3">
+                    <small id="destinationError" class="text-danger"></small>
+
+                    <button type="submit" class="submit-btn mt-3">
                         Submit Now
                     </button>
 
@@ -50,3 +56,61 @@
         </div>
     </div>
 </section>
+
+<!-- ================= VALIDATION SCRIPT ================= -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+
+    let isValid = true;
+
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let phone = document.getElementById("phone").value.trim();
+    let destination = document.getElementById("destination").value.trim();
+
+    // Clear previous errors
+    document.getElementById("nameError").innerText = "";
+    document.getElementById("emailError").innerText = "";
+    document.getElementById("phoneError").innerText = "";
+    document.getElementById("destinationError").innerText = "";
+
+    // Name validation
+    if(name === "") {
+        document.getElementById("nameError").innerText = "Name is required";
+        isValid = false;
+    }
+
+    // Email validation
+    if(email === "") {
+        document.getElementById("emailError").innerText = "Email is required";
+        isValid = false;
+    }
+       else if(!/^\S+@@\S+\.\S+$/.test(email))
+     {
+        document.getElementById("emailError").innerText = "Enter valid email address";
+        isValid = false;
+    }
+
+    // Phone validation
+    if(phone === "") {
+        document.getElementById("phoneError").innerText = "Phone number is required";
+        isValid = false;
+    } 
+    else if(!/^[0-9]{10}$/.test(phone)) {
+        document.getElementById("phoneError").innerText = "Enter valid 10 digit number";
+        isValid = false;
+    }
+
+    // Destination validation
+    if(destination === "") {
+        document.getElementById("destinationError").innerText = "Destination is required";
+        isValid = false;
+    }
+
+    // Stop submit if invalid
+    if(!isValid) {
+        e.preventDefault();
+    }
+
+});
+</script>
