@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - POORNASATHYA TRAVELS</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ===== TOP HEADER ===== -->
+    <div class="top-header">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <div class="top-left">
+                <a href="tel:+919901101912">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="top-text"> (+91) 99011 01912</span>
+                </a>
+
+                <a href="mailto:info@poornasathyatravels.com" class="ms-3">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="top-text"> info@poornasathyatravels.com</span>
+                </a>
+            </div>
+
+            <div class="top-right">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank" class="ms-3">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ===== MAIN HEADER ===== -->
+    <div class="main-header">
+        <div class="container d-flex align-items-center justify-content-between">
+
+
+            <div class="d-flex align-items-center">
+                <a asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.png" class="site-logo" />
+                </a>
+                <span class="site-name">POORNASATHYA TRAVELS</span>
+            </div>
+
+            <!-- DESKTOP MENU -->
+            <nav class="d-none d-lg-flex align-items-center gap-4 desktop-nav">
+
+                <!-- HOME -->
+                <a asp-controller="Home" asp-action="Index" class="fw-semibold nav-link">
+                    Home
+                </a>
+
+                <!-- DESTINATIONS -->
+                <div class="dropdown desktop-dropdown position-static">
+
+                    <a class="nav-link dropdown-toggle fw-semibold"
+                       href="#"
+                       id="destinationDropdown"
+                       role="button">
+                        Destinations
+                    </a>
+
+                    <div class="dropdown-menu custom-destination-dropdown"
+                         aria-labelledby="destinationDropdown">
+
+                        <div class="mega-wrapper">
+                            <div class="destination-grid">
+
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali">
+                                        <div class="destination-overlay">
+                                            <h5>Bali</h5>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Thailand">
+                                        <div class="destination-overlay">
+                                            <h5>Thailand</h5>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b04" alt="Dubai">
+                                        <div class="destination-overlay">
+                                            <h5>Dubai</h5>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="Japan">
+                                        <div class="destination-overlay">
+                                            <h5>Japan</h5>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                        <a href="#" class="destination-card">
+                                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                            <div class="destination-overlay">
+                                                <h5>Vietnam</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="destination-card">
+                                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                            <div class="destination-overlay">
+                                                <h5>Vietnam</h5>
+                                            </div>
+                                        </a>
+                                                                            <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+                                        <a href="#" class="destination-card">
+                                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                            <div class="destination-overlay">
+                                                <h5>Vietnam</h5>
+                                            </div>
+                                        </a>
+                                                                            <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+                                        <a href="#" class="destination-card">
+                                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                            <div class="destination-overlay">
+                                                <h5>Vietnam</h5>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="destination-card">
+                                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                            <div class="destination-overlay">
+                                                <h5>Vietnam</h5>
+                                            </div>
+                                        </a>
+                                                                            <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+                                        <a href="#" class="destination-card">
+                                            <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                            <div class="destination-overlay">
+                                                <h5>Vietnam</h5>
+                                            </div>
+                                        </a>
+                                                                            <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+                                                                        <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                                                            <a href="#" class="destination-card">
+                                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
+                                        <div class="destination-overlay">
+                                            <h5>Vietnam</h5>
+                                        </div>
+                                    </a>
+
+                                    </a>
+                                    </a>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                    
+
+
+                </div>
+
+
+                <!-- CATEGORY -->
+                <div class="dropdown desktop-dropdown">
+
+                    <a class="nav-link dropdown-toggle fw-semibold"
+                       href="#"
+                       id="categoryDropdown"
+                       role="button">
+                        Category
+                    </a>
+
+                    <ul class="dropdown-menu category-card"
+                        aria-labelledby="categoryDropdown">
+
+                        <li><a class="dropdown-item" asp-action="Trips">Trips</a></li>
+                        <li><a class="dropdown-item" asp-action="Cultural">Cultural</a></li>
+                        <li><a class="dropdown-item" asp-action="Visas">Visas</a></li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- ABOUT -->
+                <a asp-action="About" class="fw-semibold nav-link">
+                    About Us
+                </a>
+
+                <!-- CONTACT -->
+                <a asp-action="Contact" class="fw-semibold nav-link">
+                    Contact Us
+                </a>
+
+            </nav>
+
+
+            <!-- MOBILE MENU BUTTON -->
+            <button class="menu-btn d-lg-none"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#menuCanvas">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- MOBILE FULL MENU -->
+    <!-- MOBILE FULL MENU -->
+    <div class="offcanvas offcanvas-end mobile-full" id="menuCanvas">
+
+        <!-- PREMIUM HEADER -->
+        <div class="offcanvas-header mobile-menu-header">
+
+            <div class="mobile-brand">
+                <img src="~/images/logo.png" class="mobile-logo" />
+                <span>POORNASATHYA TRAVELS</span>
+            </div>
+
+            <div class="mobile-header-icons">
+                <a href="tel:+919901101912">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+                <button type="button"
+                        class="btn-close custom-close"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close">
+                </button>
+            </div>
+
+        </div>
+
+
+        <div class="offcanvas-body">
+
+            <a asp-controller="Home" asp-action="Index" class="mob-link">
+                Home
+            </a>
+
+            <!-- DESTINATIONS -->
+            <button class="mob-link d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#destCollapse"
+                    aria-expanded="false">
+                <span>Destinations</span>
+                <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </button>
+
+
+            <div class="collapse mob-grid" id="destCollapse">
+                <a asp-action="Bali">Bali</a>
+                <a asp-action="Thailand">Thailand</a>
+                <a asp-action="Ayodhya">Ayodhya</a>
+                <a asp-action="Dubai">Dubai</a>
+                <a asp-action="Singapore">Singapore</a>
+                <a asp-action="Maldives">Maldives</a>
+            </div>
+
+            <!-- CATEGORY -->
+            <button class="mob-link d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#catCollapse"
+                    aria-expanded="false">
+                <span>Category</span>
+                <i class="fa-solid fa-chevron-down arrow-icon"></i>
+            </button>
+
+
+            <div class="collapse mob-grid" id="catCollapse">
+                <a asp-action="Trips">Trips</a>
+                <a asp-action="Cultural">Cultural</a>
+                <a asp-action="Visas">Visas</a>
+            </div>
+
+            <a asp-action="About" class="mob-link">
+                About Us
+            </a>
+
+            <a asp-action="Contact" class="mob-link">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ===== PAGE CONTENT ===== -->
+    <main>
+        @RenderBody()
+        @await Html.PartialAsync("_WhyChooseUsAndReviews")
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="custom-footer">
+
+        <div class="container footer-top">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <h4><span class="orange-bar"></span> Get In Touch</h4>
+                    <p>Have questions or need assistance? Get in touch with us.</p>
+                </div>
+
+                <div class="col-md-6 text-md-end mt-3 mt-md-0">
+                    <input type="text"
+                           id="phoneInput"
+                           placeholder="Enter Phone Number"
+                           maxlength="10"
+                           class="footer-input" />
+
+                    <button onclick="validatePhone()" class="footer-btn">
+                        Submit Now
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container footer-content">
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img src="~/images/logo.png" class="footer-logo" />
+                    <p>
+                        Poornasathya Travels is a Bangalore-based travel company
+                        specializing in customized holiday packages and group tours.
+                    </p>
+
+                    <p>
+                        <a href="tel:+919901101912" class="footer-link">
+                            <i class="fa fa-phone footer-icon"></i> (+91) 99011 01912
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="mailto:info@poornasathyatravels.com" class="footer-link">
+                            <i class="fa fa-envelope footer-icon"></i> info@poornasathyatravels.com
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="https://www.google.com/maps/place/BM+Road+Channarayapatna"
+                           target="_blank"
+                           class="footer-link">
+                            <i class="fa fa-map-marker-alt footer-icon"></i> BM Road, Channarayapatna
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a asp-controller="Home" asp-action="Trips">Trips</a></li>
+                        <li><a asp-controller="Home" asp-action="Cultural">Cultural</a></li>
+                        <li><a asp-controller="Home" asp-action="Visas">Visa</a></li>
+                        <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Categories</h5>
+                    <ul class="footer-links">
+                        <li>#Domestic Tours</li>
+                        <li>#International Tours</li>
+                        <li>#Group Packages</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="container text-center">
+
+            <div class="footer-social mb-3">
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.google.com/maps/place/BM+Road+Channarayapatna" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </div>
+
+            <p class="copyright-text">
+                © 2026 POORNASATHYA TRAVELS. All Rights Reserved.
+            </p>
+
+        </div>
+    </div>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var reviewCarousel = document.querySelector('#reviewCarousel');
+
+        if (reviewCarousel) {
+            var carousel = new bootstrap.Carousel(reviewCarousel, {
+                interval: 4000,
+                ride: 'carousel',
+                pause: false,
+                wrap: true
+            });
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+                menu.classList.remove('show');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const destCollapse = document.getElementById('destCollapse');
+            const catCollapse = document.getElementById('catCollapse');
+
+            // FORCE CLOSE ON PAGE LOAD
+            destCollapse.classList.remove('show');
+            catCollapse.classList.remove('show');
+
+            // Reset aria state
+            document.querySelector('[data-bs-target="#destCollapse"]').setAttribute('aria-expanded', 'false');
+            document.querySelector('[data-bs-target="#catCollapse"]').setAttribute('aria-expanded', 'false');
+
+            // Allow only one open at a time
+            destCollapse.addEventListener('show.bs.collapse', function () {
+                new bootstrap.Collapse(catCollapse, { toggle: false }).hide();
+            });
+
+            catCollapse.addEventListener('show.bs.collapse', function () {
+                new bootstrap.Collapse(destCollapse, { toggle: false }).hide();
+            });
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            var menuCanvas = document.getElementById('menuCanvas');
+            var destCollapse = document.getElementById('destCollapse');
+            var catCollapse = document.getElementById('catCollapse');
+
+            menuCanvas.addEventListener('show.bs.offcanvas', function () {
+
+                // Force close both dropdowns when menu opens
+                new bootstrap.Collapse(destCollapse, {
+                    toggle: false
+                }).hide();
+
+                new bootstrap.Collapse(catCollapse, {
+                    toggle: false
+                }).hide();
+            });
+
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const destCollapse = document.getElementById("destCollapse");
+            const catCollapse = document.getElementById("catCollapse");
+            const offcanvasEl = document.getElementById("menuCanvas");
+
+            // Close Category when Destinations opens
+            destCollapse.addEventListener("show.bs.collapse", function () {
+                new bootstrap.Collapse(catCollapse, { toggle: false }).hide();
+            });
+
+            // Close Destinations when Category opens
+            catCollapse.addEventListener("show.bs.collapse", function () {
+                new bootstrap.Collapse(destCollapse, { toggle: false }).hide();
+            });
+
+            // Close entire mobile menu when any link is clicked
+            document.querySelectorAll("#menuCanvas a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+                    if (offcanvas) {
+                        offcanvas.hide();
+                    }
+                });
+            });
+
+        });
+    </script>
+
+</body>
+</html>
+
+
+
