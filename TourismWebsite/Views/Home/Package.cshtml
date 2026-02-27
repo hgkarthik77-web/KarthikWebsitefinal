@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Package";
+}
+
+<div class="container py-5">
+
+    <!-- Dynamic Title -->
+    <h2 class="mb-4 text-center">@ViewBag.PackageName Package Details</h2>
+
+    <!-- Image -->
+    <div class="text-center mb-4">
+        <img src="~/images/bali.jpg" 
+             class="img-fluid rounded shadow"
+             style="max-height:400px;" />
+    </div>
+
+    <!-- About Section -->
+    <div class="package-description">
+        <h4>About @ViewBag.PackageName</h4>
+
+        <p>
+            Bali is one of the most beautiful island destinations in Indonesia.
+            It is famous for beaches, temples, waterfalls, and scenic landscapes.
+            This package includes sightseeing, hotel stay, and guided tours.
+        </p>
+
+        <ul>
+            <li>✔ 5 Days / 4 Nights Stay</li>
+            <li>✔ Airport Pickup & Drop</li>
+            <li>✔ Daily Breakfast</li>
+            <li>✔ Local Sightseeing</li>
+        </ul>
+    </div>
+
+</div>

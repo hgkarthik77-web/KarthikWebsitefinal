@@ -43,8 +43,16 @@ namespace TourismWebsite.Controllers
             return View();
         }
 
-
-
+        public IActionResult Destination(string name)
+        {
+            ViewBag.DestinationName = name;
+            return View();
+        }
+        public IActionResult Package(string name)
+        {
+            ViewBag.PackageName = name;
+            return View();
+        }
 
     }
 }

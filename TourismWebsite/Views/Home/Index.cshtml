@@ -96,50 +96,60 @@
 </section>
 <!-- ================= POPULAR TOURS ================= -->
 
-<section class="popular-tours py-5">
+<section class="popular-tours popular-mini-style py-5">
     <div class="container">
 
-        <div class="text-center mb-5">
-            <h2 class="section-heading">Popular Tours</h2>
-            <p class="section-subtitle">
-                Discover our most loved travel packages
-            </p>
+        <!-- LEFT HEADING -->
+        <div class="mini-section-header">
+            <div class="mini-vertical-line"></div>
+            <h2>Popular Tours</h2>
         </div>
 
         <div class="row g-4">
 
-            <!-- CARD TEMPLATE START -->
             <!-- Card 1 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Bali</h5>
                         <span>5 Days / 4 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874"  class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <!-- COPY SAME PATTERN FOR ALL OTHER CARDS -->
+
             <!-- Card 2 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Thailand">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Thailand</h5>
                         <span>6 Days / 5 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -147,17 +157,22 @@
 
             <!-- Card 3 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://plus.unsplash.com/premium_photo-1697729914552-368899dc4757?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHViYWl8ZW58MHx8MHx8fDA%3D4" alt="Dubai">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Dubai</h5>
                         <span>4 Days / 3 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -165,17 +180,22 @@
 
             <!-- Card 4 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="Vietnam">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Vietnam</h5>
                         <span>5 Days / 4 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -183,17 +203,22 @@
 
             <!-- Card 5 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://images.unsplash.com/photo-1508964942454-1a56651d54ac" alt="Singapore">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Singapore</h5>
                         <span>4 Days / 3 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -201,17 +226,22 @@
 
             <!-- Card 6 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828" alt="Switzerland">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Switzerland</h5>
                         <span>7 Days / 6 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -219,17 +249,22 @@
 
             <!-- Card 7 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://images.unsplash.com/photo-1508786301-5d6544666ba2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHR1cmtleXxlbnwwfHwwfHx8MA%3D%3D" alt="Turkey">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Turkey</h5>
                         <span>6 Days / 5 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" " class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -237,17 +272,22 @@
 
             <!-- Card 8 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc" alt="South Korea">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>South Korea</h5>
                         <span>5 Days / 4 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -255,17 +295,22 @@
 
             <!-- Card 9 -->
             <div class="col-lg-4 col-md-6">
-                <div class="tour-card">
+                <div class="tour-card mini-card">
                     <img src="https://plus.unsplash.com/premium_photo-1688147583826-1c169e82c57f?q=80&w=1075&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Germany">
-                    <div class="tour-content">
+                    <div class="tour-content mini-content">
                         <h5>Germany</h5>
                         <span>6 Days / 5 Nights</span>
 
                         <div class="tour-buttons">
-                            <a href="tel:+919901101912" class="call-btn">
+                            <a href="tel:+919844741874" class="call-btn">
                                 <i class="fa fa-phone"></i> Call
                             </a>
-                            <a href="#" class="view-btn">View More</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="view-btn">
+                                View More
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -276,4 +321,605 @@
         </div>
     </div>
 </section>
+<section class="popular-destinations py-5">
+    <div class="container">
 
+        <!-- Section Header -->
+<div class="custom-section-header">
+    <div class="custom-vertical-line"></div>
+    <h2>Popular Destinations</h2>
+</div>  
+
+        <div class="row g-4">
+
+            <!-- 1 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="South Africa" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e">
+                    <div class="destination-content">
+                        <h5>South Africa</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>  
+
+            <!-- 2 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Bali" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+                    <div class="destination-content">
+                        <h5>Bali</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Malaysia & Singapore" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd">
+                    <div class="destination-content">
+                        <h5>Malaysia & Singapore</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Kedarkantha" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+                    <div class="destination-content">
+                        <h5>Kedarkantha</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Shirdi" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+                    <div class="destination-content">
+                        <h5>Shirdi</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Japan" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1549693578-d683be217e58">
+                    <div class="destination-content">
+                        <h5>Japan</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 7 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Vietnam" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592">
+                    <div class="destination-content">
+                        <h5>Vietnam</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 8 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Ayodhya" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92">
+                    <div class="destination-content">
+                        <h5>Ayodhya</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 9 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Manali" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e">
+                    <div class="destination-content">
+                        <h5>Manali</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 10 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Thailand" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+                    <div class="destination-content">
+                        <h5>Thailand</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 11 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Gokarna Beach" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+                    <div class="destination-content">
+                        <h5>Gokarna Beach</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 12 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Himachal Pradesh" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+                    <div class="destination-content">
+                        <h5>Himachal Pradesh</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 13 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Sri Lanka" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62">
+                    <div class="destination-content">
+                        <h5>Sri Lanka</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 14 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Dubai" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b04">
+                    <div class="destination-content">
+                        <h5>Dubai</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 15 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Kashmir" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e">
+                    <div class="destination-content">
+                        <h5>Kashmir</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 16 -->
+            <div class="col-lg-4 col-md-6 col-6">
+                <a asp-controller="Home" asp-action="Destination" asp-route-name="Malaysia" class="destination-long-card">
+                    <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd">
+                    <div class="destination-content">
+                        <h5>Malaysia</h5>
+                        <button class="explore-btn">Explore</button>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="tour-slider-section py-5">
+    <div class="container">
+
+        <div class="section-header">
+            <div class="vertical-line"></div>
+            <h2>International Tours</h2>
+        </div>
+
+        <div class="tour-slider-wrapper position-relative">
+
+            <!-- LEFT ARROW -->
+            <button class="slider-arrow left"
+                    onclick="document.getElementById('internationalSlider').scrollLeft -= 350">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="tour-slider" id="internationalSlider">
+
+                <!-- 🔥 KEEP ALL YOUR EXISTING CARDS EXACTLY SAME HERE -->
+
+                <!-- CARD 1 -->
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+                    <div class="tour-card-body">
+                        <h5>Bali</h5>
+                        <p>5 Days / 4 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat 7 more cards -->
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1494475673543-6a6a27143b04">
+                    <div class="tour-card-body">
+                        <h5>Dubai</h5>
+                        <p>4 Days / 3 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1549693578-d683be217e58">
+                    <div class="tour-card-body">
+                        <h5>Japan</h5>
+                        <p>6 Days / 5 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd">
+                    <div class="tour-card-body">
+                        <h5>Malaysia</h5>
+                        <p>5 Days / 4 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+                    <div class="tour-card-body">
+                        <h5>Thailand</h5>
+                        <p>5 Days / 4 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828">
+                    <div class="tour-card-body">
+                        <h5>Switzerland</h5>
+                        <p>7 Days / 6 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1526481280690-7b24e29c5b73">
+                    <div class="tour-card-body">
+                        <h5>Turkey</h5>
+                        <p>6 Days / 5 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc">
+                    <div class="tour-card-body">
+                        <h5>South Korea</h5>
+                        <p>5 Days / 4 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Bali"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT ARROW -->
+            <button class="slider-arrow right"
+                    onclick="document.getElementById('internationalSlider').scrollLeft += 350">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="slider-progress">
+                <div class="progress-bar" id="internationalProgress"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="tour-slider-section py-5">
+    <div class="container">
+
+        <div class="section-header">
+            <div class="vertical-line"></div>
+            <h2>Domestic & Cultural Tours</h2>
+        </div>
+
+        <div class="tour-slider-wrapper position-relative">
+
+            <!-- LEFT ARROW -->
+            <button class="slider-arrow left"
+                    onclick="document.getElementById('domesticSlider').scrollLeft -= 350">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="tour-slider" id="domesticSlider">
+
+                <!-- 🔥 KEEP YOUR EXISTING DOMESTIC CARDS SAME -->
+
+                <!-- CARD 1 -->
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+                    <div class="tour-card-body">
+                        <h5>Kedarkantha</h5>
+                        <p>5 Days / 4 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada">
+                    <div class="tour-card-body">
+                        <h5>Manali</h5>
+                        <p>4 Days / 3 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77">
+                    <div class="tour-card-body">
+                        <h5>Kashmir</h5>
+                        <p>6 Days / 5 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90">
+                    <div class="tour-card-body">
+                        <h5>Shirdi</h5>
+                        <p>3 Days / 2 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866">
+                    <div class="tour-card-body">
+                        <h5>Ayodhya</h5>
+                        <p>3 Days / 2 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+                    <div class="tour-card-body">
+                        <h5>Himachal Pradesh</h5>
+                        <p>6 Days / 5 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+                    <div class="tour-card-body">
+                        <h5>Gokarna Beach</h5>
+                        <p>4 Days / 3 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tour-slide-card">
+                    <img src="https://images.unsplash.com/photo-1540202404-1b927e27fa8b">
+                    <div class="tour-card-body">
+                        <h5>Andaman</h5>
+                        <p>5 Days / 4 Nights</p>
+                        <div class="tour-buttons">
+                            <a href="tel:+919844741874" class="btn-call"><i class="fa fa-phone"></i> Call</a>
+                            <a asp-controller="Home"
+                               asp-action="Package"
+                               asp-route-name="Kedarkantha"
+                               class="btn-view">
+                                View More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT ARROW -->
+            <button class="slider-arrow right"
+                    onclick="document.getElementById('domesticSlider').scrollLeft += 350">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="slider-progress">
+                <div class="progress-bar" id="domesticProgress"></div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="destination-category-section py-5">
+    <div class="container">
+
+        <div class="destination-section-header">
+            <div class="destination-vertical-line"></div>
+            <h2>Explore By Category</h2>
+        </div>
+
+        <div class="destination-category-wrapper">
+
+            <!-- LEFT ARROW -->
+            <button class="destination-arrow dest-left"
+                    onclick="scrollDestinationCategory(-1)">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <div class="destination-category-slider"
+                 id="destinationCategorySlider">
+
+                <!-- CARD 1 -->
+                <a asp-controller="Home" asp-action="Trips"
+                   class="destination-category-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+                    <div class="destination-overlay">
+                        <h4>Domestic Tours</h4>
+                    </div>
+                </a>
+
+
+
+                <!-- CARD 2 -->
+                <a asp-controller="Home" asp-action="Cultural"
+                   class="destination-category-card">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+                    <div class="destination-overlay">
+                        <h4>Cultural Tours</h4>
+                    </div>
+                </a>
+
+                <!-- CARD 3 -->
+                <a asp-controller="Home" asp-action="Visas"
+                   class="destination-category-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+                    <div class="destination-overlay">
+                        <h4>International Tours</h4>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- RIGHT ARROW -->
+            <button class="destination-arrow dest-right"
+                    onclick="scrollDestinationCategory(1)">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+
+            <!-- PROGRESS -->
+            <div class="destination-progress">
+                <div class="destination-progress-bar"
+                     id="destinationCategoryProgress"></div>
+            </div>
+
+        </div>
+
+    </div>
+</section>

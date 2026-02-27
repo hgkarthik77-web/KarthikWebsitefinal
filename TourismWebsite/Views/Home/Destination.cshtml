@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "Destination";
+}
+
+<section class="destination-hero text-center py-5">
+    <div class="container">
+        <h1>@ViewBag.DestinationName</h1>
+    </div>
+</section>
+
+<section class="destination-details py-5">
+    <div class="container">
+
+        @if (ViewBag.DestinationName == "South Africa")
+        {
+            <h3>About South Africa</h3>
+            <p>
+                South Africa is famous for its wildlife safaris, Cape Town beauty,
+                Table Mountain, and stunning coastlines.
+            </p>
+        }
+
+        else if (ViewBag.DestinationName == "Bali")
+        {
+            <h3>About Bali</h3>
+            <p>
+                Bali is known for beaches, temples, rice terraces,
+                and beautiful sunsets.
+            </p>
+        }
+
+        else if (ViewBag.DestinationName == "Dubai")
+        {
+            <h3>About Dubai</h3>
+            <p>
+                Dubai offers luxury shopping, desert safari,
+                Burj Khalifa and modern architecture.
+            </p>
+        }
+
+        else
+        {
+            <h3>About @ViewBag.DestinationName</h3>
+            <p>
+                Explore beautiful attractions and travel packages
+                in @ViewBag.DestinationName.
+            </p>
+        }
+
+    </div>
+</section>
+<section class="category-slider-section py-5">
+    <div class="container">
+
+        <div class="section-header">
+            <div class="vertical-line"></div>
+            <h2>Explore By Category</h2>
+        </div>
+
+        <div class="category-slider-wrapper">
+
+            <!-- LEFT ARROW -->
+            <button class="slider-arrow left-arrow" onclick="scrollCategory(-1)">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <div class="category-slider" id="categorySlider">
+
+                <!-- CARD 1 -->
+                <a asp-controller="Home" asp-action="Trips" class="category-slide-card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+                    <div class="custom-category-overlay">
+                        <h4>Domestic Tours</h4>
+                    </div>
+                </a>
+
+                <!-- CARD 2 -->
+                <a asp-controller="Home" asp-action="Cultural" class="category-slide-card">
+                    <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+                    <div class="custom-category-overlay">
+                        <h4>Cultural Tours</h4>
+                    </div>
+                </a>
+
+                <!-- CARD 3 -->
+                <a asp-controller="Home" asp-action="Visas" class="category-slide-card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+                    <div class="custom-category-overlay">
+                        <h4>International Tours</h4>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- RIGHT ARROW -->
+            <button class="slider-arrow right-arrow" onclick="scrollCategory(1)">
+                <i class="fa fa-chevron-right"></i>
+            </button>
+
+            <!-- PROGRESS BAR -->
+            <div class="slider-progress">
+                <div class="progress-bar" id="categoryProgress"></div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
