@@ -2,8 +2,44 @@
     ViewData["Title"] = "Gallery";
 }
 
-<h1>Gallery</h1>
+<section class="gallery-section py-5">
+    <div class="container">
 
-<p>
-    Photos will be added here.
-</p>
+        <h2 class="mb-4 text-center">Our Travel Memories</h2>
+
+        <div class="row g-4" id="galleryContainer">
+            <!-- Images will load automatically here -->
+        </div>
+
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+
+        fetch("https://res.cloudinary.com/dwo0khbsi/image/list/gallery.json")
+        .then(response => response.json())
+        .then(data => {
+
+            let html = "";
+
+            data.resources.forEach(img => {
+
+                html += `
+                <div class="col-lg-4 col-md-6 col-6">
+                    <div class="gallery-card">
+                        <img src="https://res.cloudinary.com/dwo0khbsi/image/upload/${img.public_id}.${img.format}"
+                             class="img-fluid rounded shadow-sm">
+                    </div>
+                </div>`;
+            });
+
+            document.getElementById("galleryContainer").innerHTML = html;
+
+        })
+        .catch(error => {
+            console.log("Error loading gallery:", error);
+        });
+
+    });
+</script>
